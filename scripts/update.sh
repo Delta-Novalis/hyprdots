@@ -23,7 +23,6 @@ fi
 sudo pacman -Syu
 
 cd
-rm -rf ~/hyprdots
 git clone https://github.com/Delta-Novalis/hyprdots
 if cmp ~/.hyprdots/version ~/hyprdots/misc/version; then
     echo "Your up to date ^-^"
@@ -35,5 +34,6 @@ rm -f ~/.config/hypr/hyprpaper.conf && cp -f ~/.hyprdots/hyprpaper.conf ~/.confi
 rm -f ~/.hyprdots/update.sh && cp -f ~/hyprdots/scripts/update.sh ~/.hyprdots
 rm -f ~/.hyprdots/hyprpaper.conf
 cp -f ~/hyprdots/misc/version ~/.hyprdots
+rm -rf ~/hyprdots
 
 echo "Update done ^w^"
