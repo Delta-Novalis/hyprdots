@@ -22,7 +22,7 @@ fi
 
 sudo pacman -Syu
 
-sudo pacman -S hypr{land,lock,idle,paper,land-qtutils} kitty btop waybar pipewire{,-pulse,-alsa,-jack} wireplumber
+sudo pacman -S sddm hypr{land,lock,idle,paper,land-qtutils} kitty btop waybar pipewire{,-pulse,-alsa,-jack} wireplumber
 git clone https://aur.archlinux.org/paru.git
 cd ./paru
 makepkg -si
