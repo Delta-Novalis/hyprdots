@@ -27,6 +27,7 @@ rm -rf ~/hyprdots
 git clone https://github.com/Delta-Novalis/hyprdots
 if cmp ~/.hyprdots/version ~/hyprdots/misc/version; then
     echo "Your up to date ^-^"
+    exit 1
 fi
 cp -rf ~/.config/hypr/hyprpaper.conf ~/.hyprdots
 rm -rf ~/.config/{btop,hypr,kitty,waybar,wofi} && cp -rf ~/hyprdots/config/* ~/.config
