@@ -31,7 +31,10 @@ rm -rf ~/paru
 
 paru -S light hypr{polkitagent,shot}
 
-rm -rf ~/.config/{btop,hypr,kitty,waybar,wofi} && cp ~/hyprdots/config/* ~/.config
+rm -rf ~/.config/{btop,hypr,kitty,waybar,wofi} && cp -rf ~/hyprdots/config/* ~/.config
+mkdir ~/.hyprdots
+cp -f ~/hyprdots/misc/version ~/.hyprdots
+cp -f ~/hyprdots/scripts/update ~/.hyprdots
 
 user=$(whoami)
 sudo usermod -aG video $user
