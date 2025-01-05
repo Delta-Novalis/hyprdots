@@ -26,6 +26,7 @@ cd
 git clone https://github.com/Delta-Novalis/hyprdots
 if cmp ~/.hyprdots/version ~/hyprdots/misc/version; then
     echo "Your up to date ^-^"
+    rm -rf ~/hyprdots
     exit 1
 fi
 cp -rf ~/.config/hypr/hyprpaper.conf ~/.hyprdots
