@@ -22,7 +22,7 @@ fi
 
 sudo pacman -Syu
 
-sudo pacman -S sddm hypr{land,lock,idle,paper,land-qtutils} kitty btop waybar pipewire{,-pulse,-alsa,-jack} wireplumber ttf-jetbrains-mono-nerd blueman bluetui
+sudo pacman -S sddm hypr{land,lock,idle,paper,land-qtutils} kitty btop waybar pipewire{,-pulse,-alsa,-jack} wireplumber alsa-utils ttf-jetbrains-mono-nerd blue{man,tui} wofi
 git clone https://aur.archlinux.org/paru.git
 cd ./paru
 makepkg -si
@@ -38,7 +38,7 @@ cp -f ~/hyprdots/scripts/update ~/.hyprdots
 
 user=$(whoami)
 sudo usermod -aG video $user
-sudo systemctl enable sddm
+sudo systemctl enable sddm bluetooth
 systemctl --user enable pipewire{,-pulse} wireplumber
 
 echo -n "..5"
