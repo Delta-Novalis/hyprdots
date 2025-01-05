@@ -1,0 +1,219 @@
+* {
+    font-family: 'JetBrainsMonoNL Nerd Font';
+    font-size: 13px;
+    min-height: 0px;
+}
+
+window#waybar {
+    background-color: rgb(40, 40, 40);
+}
+
+.modules-left {
+    background-color: rgb(30, 30, 30);
+    border-radius: 100px;
+    margin: 3px;
+}
+
+.modules-center {
+    background-color: rgb(30, 30, 30);
+    border-radius: 100px;
+    margin: 3px;
+}
+
+.modules-right {
+    background-color: rgb(30, 30, 30);
+    border-radius: 100px;
+    margin: 3px;
+}
+
+/* Workspaces */
+
+#workspaces button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(10, 10, 10);
+    font-weight: bolder;
+    border-radius: 10;
+    margin: 3px;
+    padding: 0px 4px;
+}
+
+#workspaces button.active {
+    color: rgb(10, 10, 10);
+    background-color: rgb(255, 255, 255);
+    font-weight: bolder;
+    border-radius: 10;
+    margin: 3px;
+    padding: 0px 10px;
+}
+
+/* Window */
+
+#window {
+    color: rgb(10, 10, 10);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10;
+    margin: 3px;
+    padding: 0px 5px;
+}
+
+/* Battery */
+
+#battery {
+    color: rgb(10,10,10);
+    background-color: rgb(200, 255, 200);
+    border-radius: 10;
+    margin: 3px;
+    padding: 0px 5px;
+}
+
+#battery.charging {
+    color: rgb(10,10,10);
+    background-color: rgb(170, 255, 200);
+    border-radius: 10;
+    margin: 3px;
+    padding: 0px 5px;
+}
+
+#battery.plugged {
+    color: rgb(10,10,10);
+    background-color: rgb(170, 255, 255);
+    border-radius: 10;
+    margin: 3px;
+    padding: 0px 5px;
+}
+
+#battery.warning {
+    color: rgb(10,10,10);
+    background-color: rgb(255, 255, 170);
+    border-radius: 10;
+    margin: 3px;
+    padding: 0px 5px;
+}
+
+#battery.critical {
+    color: rgb(10,10,10);
+    background-color: rgb(255, 170, 170);
+    border-radius: 100px;
+    margin: 3px;
+    padding: 0px 5px;
+}
+
+/* CPU & Memory */
+
+#cpu, #memory {
+    color: rgb(10,10,10);
+    background-color: rgb(170, 255, 255);
+    border-radius: 100px;
+    margin: 3px;
+    padding: 0px 5px;
+}
+
+#cpu.moderate, #memory.moderate {
+    color: rgb(10,10,10);
+    background-color: rgb(255, 255, 170);
+    border-radius: 100px;
+    margin: 3px;
+    padding: 0px 5px;
+}
+
+#cpu.high, #memory.high {
+    color: rgb(10,10,10);
+    background-color: rgb(255, 170, 170);
+    border-radius: 100px;
+    margin: 3px;
+    padding: 0px 5px;
+}
+
+#cpu.ex-high, #memory.ex-high {
+    color: rgb(10,10,10);
+    background-color: rgb(255, 170, 255);
+    border-radius: 100px;
+    margin: 3px;
+    padding: 0px 5px;
+}
+
+/* Temperature */
+
+#temperature {
+    color: rgb(10, 10, 10);
+    background-color: rgb(255, 255, 170);
+    border-radius: 100px;
+    margin: 3px;
+    padding: 0px 5px;
+}
+
+#temperature.critical {
+    color: rgb(10, 10, 10);
+    background-color: rgb(255, 170, 170);
+    border-radius: 100px;
+    margin: 3px;
+    padding: 0px 5px;
+}
+
+/* Idle Inhibitor */
+
+#idle_inhibitor.activated {
+    color: rgb(10, 10, 10);
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    margin: 3px;
+    padding: 0px 5px;
+}
+
+#idle_inhibitor.deactivated {
+    color: rgb(255, 255, 255);
+    background-color: rgb(10, 10, 10);
+    border-radius: 100px;
+    margin: 3px;
+    padding: 0px 5px;
+}
+
+/* Wireplumber */
+
+#wireplumber {
+    color: rgb(10, 10, 10);
+    background-color: rgb(170, 255, 170);
+    border-radius: 100px;
+    margin: 3px;
+    padding: 0px 5px;
+}
+
+/* Backlight */
+
+#backlight {
+    color: rgb(10, 10, 10);
+    background-color: rgb(255, 255, 200);
+    border-radius: 100px;
+    margin: 3px;
+    padding: 0px 5px;
+}
+
+/* Bluetooth */
+
+#bluetooth {
+    color: rgb(10, 10, 10);
+    background-color: rgb(170, 170, 255);
+    border-radius: 100px;
+    margin: 3px;
+    padding: 0px 5px;
+}
+
+/* Network */
+
+#network {
+    color: rgb(10, 10, 10);
+    background-color: rgb(170, 200, 255);
+    border-radius: 100px;
+    margin: 3px;
+    padding: 0px 5px;
+}
+
+/* Clock */
+
+#clock {
+    color: rgb(10, 10, 10);
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    margin: 3px;
+    padding: 0px 5px;
+}
