@@ -7,11 +7,11 @@ if [ $(whoami) = root ]; then
     exit 1
 fi
 
-echo -n "Start the installation now? [Y/n] "
+echo -n "Start the update now? [Y/n] "
 read ans1
 
 if [ $ans1 = y ] || [ $ans1 = Y ]; then
-    echo "Ok installation starting ^-^"
+    echo "Ok update starting ^-^"
 elif [ $ans1 = n ] || [ $ans1 = N ]; then
     echo "ok T-T"
     exit 1
@@ -23,6 +23,7 @@ fi
 sudo pacman -Syu
 
 cd
+rm -rf ~/hyprdots
 git clone https://github.com/Delta-Novalis/hyprdots
 if [ $(cmp ~/.hyprdots/version ~/hyprdots/misc/version) ]; then
     echo "Your up to date ^-^"
