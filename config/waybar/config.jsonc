@@ -85,22 +85,26 @@
     },
 
     "wireplumber": {
-        "format": "{icon}{volume}%",
         "format-muted": " ",
         "on-click": "pavucontrol",
+        "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
         "max-volume": 120,
+        "format": "{icon}{volume}%",
         "format-icons": [" ", " ", "  "]
     },
 
     "backlight": {
         "device": "intel_backlight",
+        "on-scroll-up": "light -A 5",
+        "on-scroll-down": "light -U 5",
         "format": "{icon}{percent}%",
         "format-icons": ["󰌶", "󰌵", " "]
     },
 
     "bluetooth": {
         "interval": 1,
-        "on-click": "kitty --class floating bluetui",
+        "on-click": "blueman-manager",
 	    "format": "󰂯 {status}",
 	    "format-disabled": "󰂲",
 	    "format-connected": "󰂯 {num_connections} connected",

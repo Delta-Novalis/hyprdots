@@ -22,7 +22,7 @@ fi
 
 sudo pacman -Syu
 
-sudo pacman -S sddm hypr{land,lock,idle,paper,land-qtutils} kitty btop waybar pipewire{,-pulse,-alsa,-jack} wireplumber alsa-utils ttf-jetbrains-mono-nerd blue{man,tui} wofi xdg-desktop-portal-{gtk,hyprland} qt6ct
+sudo pacman -S sddm hypr{land,lock,idle,paper,land-qtutils} kitty btop waybar pipewire{,-pulse,-alsa,-jack} wireplumber alsa-utils ttf-jetbrains-mono-nerd blueman wofi xdg-desktop-portal-{gtk,hyprland} qt6ct pavucontrol
 git clone https://aur.archlinux.org/paru.git
 cd ./paru
 makepkg -si
