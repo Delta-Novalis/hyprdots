@@ -30,6 +30,7 @@ fi
 cp ~/.config/hypr/hyprpaper.conf ~/.hyprdots
 rm -rf ~/.config/{btop,hypr,kitty,waybar,wofi} && cp -rf ~/hyprdots/config/* ~/.config
 rm -f ~/.config/hypr/hyprpaper.conf && cp -f ~/.hyprdots/hyprpaper.conf
+rm -f ~/.hyprdots/update.sh && cp -f ~/hyprdots/scripts/update.sh
 rm -f ~/.hyprdots/hyprpaper.conf
 cp -f ~/hyprdots/misc/version ~/.hyprdots
 
