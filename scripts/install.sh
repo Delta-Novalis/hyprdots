@@ -36,8 +36,7 @@ mkdir ~/.hyprdots
 cp -f ~/hyprdots/misc/version ~/.hyprdots
 cp -f ~/hyprdots/scripts/update.sh ~/.hyprdots
 
-user=$(whoami)
-sudo usermod -aG video $user
+sudo usermod -aG video $USER
 sudo systemctl enable sddm bluetooth
 systemctl --user enable pipewire{,-pulse} wireplumber
 
@@ -52,5 +51,6 @@ sleep 1
 echo "..1"
 sleep 1
 echo "cya ^w^"
-sleep 1
+sleep 0.1
 reboot
+sleep 0.05; light -T 0.95; 
