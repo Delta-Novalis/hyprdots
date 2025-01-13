@@ -23,11 +23,11 @@ fi
 sudo pacman -Syu
 
 sudo pacman -S sddm hypr{land,lock,idle,paper,land-qtutils} kitty btop waybar pipewire{,-pulse,-alsa,-jack} wireplumber alsa-utils ttf-jetbrains-mono-nerd blueman wofi xdg-desktop-portal-{gtk,hyprland} qt6ct pavucontrol
-git clone https://aur.archlinux.org/paru.git
-cd ./paru
+git clone https://aur.archlinux.org/paru-bin.git
+cd ./paru-bin
 makepkg -si
 cd
-rm -rf ~/paru
+rm -rf ~/paru-bin
 
 paru -S light hypr{polkitagent,shot} python-pywal16
 
