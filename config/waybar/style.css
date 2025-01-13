@@ -48,6 +48,17 @@ window#waybar {
     padding: 0px 10px;
 }
 
+#workspaces button:hover {
+    color: rgb(10, 10, 10);
+    background-color: rgb(255, 255, 255);
+    font-weight: bolder;
+    border-radius: 10px;
+    margin: 3px;
+    padding: 0px 5px;
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
 /* Window */
 
 #window {

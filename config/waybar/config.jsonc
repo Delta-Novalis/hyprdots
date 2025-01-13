@@ -33,6 +33,10 @@
         "sort-by-number": true
     },
 
+    "hyprland/window": {
+        "format": " {title} "
+    },
+
     "battery": {
         "interval": 1,
         "states": {
