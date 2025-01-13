@@ -20,6 +20,8 @@ else
     exit 1
 fi
 
+sudo pacman -S sddm hypr{land,lock,idle,paper,land-qtutils} kitty btop waybar pipewire{,-pulse,-alsa,-jack} wireplumber alsa-utils ttf-jetbrains-mono-nerd blueman wofi xdg-desktop-portal-{gtk,hyprland} qt6ct pavucontrol
+paru -S light hypr{polkitagent,shot} python-pywal16
 sudo pacman -Syu
 
 cd

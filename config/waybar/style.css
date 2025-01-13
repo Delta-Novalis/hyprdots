@@ -1,3 +1,5 @@
+@import url("../../.cache/wal/colors-waybar.css");
+
 * {
     font-family: 'JetBrainsMonoNL Nerd Font';
     font-size: 13px;
@@ -5,7 +7,7 @@
 }
 
 window#waybar {
-    background-color: rgb(40, 40, 40);
+    background-color: transparent;
 }
 
 .modules-left {
@@ -32,7 +34,7 @@ window#waybar {
     color: rgb(255, 255, 255);
     background-color: rgb(10, 10, 10);
     font-weight: bolder;
-    border-radius: 10;
+    border-radius: 10px;
     margin: 3px;
     padding: 0px 1px;
 }
@@ -41,7 +43,7 @@ window#waybar {
     color: rgb(10, 10, 10);
     background-color: rgb(255, 255, 255);
     font-weight: bolder;
-    border-radius: 10;
+    border-radius: 10px;
     margin: 3px;
     padding: 0px 10px;
 }
@@ -51,7 +53,7 @@ window#waybar {
 #window {
     color: rgb(10, 10, 10);
     background-color: rgb(255, 255, 255);
-    border-radius: 10;
+    border-radius: 10px;
     margin: 3px;
     padding: 0px 5px;
 }
@@ -60,39 +62,39 @@ window#waybar {
 
 #battery {
     color: rgb(10,10,10);
-    background-color: rgb(200, 255, 200);
-    border-radius: 10;
+    background-color: @color10;
+    border-radius: 10px;
     margin: 3px;
     padding: 0px 5px;
 }
 
 #battery.charging {
     color: rgb(10,10,10);
-    background-color: rgb(170, 255, 200);
-    border-radius: 10;
+    background-color: @color10;
+    border-radius: 10px;
     margin: 3px;
     padding: 0px 5px;
 }
 
 #battery.plugged {
     color: rgb(10,10,10);
-    background-color: rgb(170, 255, 255);
-    border-radius: 10;
+    background-color: @color14;
+    border-radius: 10px;
     margin: 3px;
     padding: 0px 5px;
 }
 
 #battery.warning {
     color: rgb(10,10,10);
-    background-color: rgb(255, 255, 170);
-    border-radius: 10;
+    background-color: @color9;
+    border-radius: 10px;
     margin: 3px;
     padding: 0px 5px;
 }
 
 #battery.critical {
     color: rgb(10,10,10);
-    background-color: rgb(255, 170, 170);
+    background-color: @color9;
     border-radius: 100px;
     margin: 3px;
     padding: 0px 5px;
@@ -102,7 +104,7 @@ window#waybar {
 
 #cpu, #memory {
     color: rgb(10,10,10);
-    background-color: rgb(170, 255, 255);
+    background-color: @color14;
     border-radius: 100px;
     margin: 3px;
     padding: 0px 5px;
@@ -110,7 +112,7 @@ window#waybar {
 
 #cpu.moderate, #memory.moderate {
     color: rgb(10,10,10);
-    background-color: rgb(255, 255, 170);
+    background-color: @color11;
     border-radius: 100px;
     margin: 3px;
     padding: 0px 5px;
@@ -118,7 +120,7 @@ window#waybar {
 
 #cpu.high, #memory.high {
     color: rgb(10,10,10);
-    background-color: rgb(255, 170, 170);
+    background-color: @color9;
     border-radius: 100px;
     margin: 3px;
     padding: 0px 5px;
@@ -126,7 +128,7 @@ window#waybar {
 
 #cpu.ex-high, #memory.ex-high {
     color: rgb(10,10,10);
-    background-color: rgb(255, 170, 255);
+    background-color: @color13;
     border-radius: 100px;
     margin: 3px;
     padding: 0px 5px;
@@ -136,7 +138,7 @@ window#waybar {
 
 #temperature {
     color: rgb(10, 10, 10);
-    background-color: rgb(255, 255, 170);
+    background-color: @color11;
     border-radius: 100px;
     margin: 3px;
     padding: 0px 5px;
@@ -144,7 +146,7 @@ window#waybar {
 
 #temperature.critical {
     color: rgb(10, 10, 10);
-    background-color: rgb(255, 170, 170);
+    background-color: @color9;
     border-radius: 100px;
     margin: 3px;
     padding: 0px 5px;
@@ -172,7 +174,7 @@ window#waybar {
 
 #wireplumber {
     color: rgb(10, 10, 10);
-    background-color: rgb(170, 255, 170);
+    background-color: @color10;
     border-radius: 100px;
     margin: 3px;
     padding: 0px 5px;
@@ -182,7 +184,7 @@ window#waybar {
 
 #backlight {
     color: rgb(10, 10, 10);
-    background-color: rgb(255, 255, 200);
+    background-color: @color11;
     border-radius: 100px;
     margin: 3px;
     padding: 0px 5px;
@@ -192,7 +194,7 @@ window#waybar {
 
 #bluetooth {
     color: rgb(10, 10, 10);
-    background-color: rgb(170, 170, 255);
+    background-color: @color13;
     border-radius: 100px;
     margin: 3px;
     padding: 0px 5px;
@@ -202,7 +204,7 @@ window#waybar {
 
 #network {
     color: rgb(10, 10, 10);
-    background-color: rgb(170, 200, 255);
+    background-color: @color12;
     border-radius: 100px;
     margin: 3px;
     padding: 0px 5px;

@@ -1,3 +1,5 @@
+These are dotfiles, files with a dot in the front, and they're used to configure the system.
+
 Keybinds :
 - Super + Enter = Terminal
 - Super + R = Wofi
