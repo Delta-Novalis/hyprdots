@@ -27,7 +27,7 @@ wallset() {
 cat ~/.cache/wal/sequences
 source ~/.cache/wal/colors-tty.sh
 
-EDITOR="nvim"
+export EDITOR="nvim"
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
