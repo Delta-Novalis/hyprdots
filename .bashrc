@@ -9,10 +9,12 @@ wallset() {
 	wal --cols16 -n -i "$@"
 	echo -e "preload = $@\nwallpaper = , $@" > ~/.config/hypr/hyprpaper.conf
 	killall hyprpaper
-	echo -n "Restart Now? (pls ^w^) [Y/n] : "
+	echo -n "Restart Now? (pls ^w^) [Y/n] "
 	read "ans"
 	if [ $ans = y ] || [ $ans = Y ]; then
     		echo "Ok cya! >w<"
+			sleep 0.1
+			reboot
 	elif [ $ans = n ] || [ $ans = N ]; then
     		echo "ok -w-;"
     		exit 1

@@ -29,7 +29,7 @@ makepkg -si
 cd
 rm -rf ~/paru-bin
 
-paru -S light hypr{polkitagent,shot} python-pywal16
+paru -S light hypr{polkitagent-bin,shot} python-pywal16
 
 rm -rf ~/.config/{btop,hypr,kitty,waybar,wofi} && cp -rf ~/hyprdots/config/* ~/.config
 mkdir ~/.hyprdots
