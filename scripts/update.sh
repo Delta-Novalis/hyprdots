@@ -37,7 +37,8 @@ rm -rf ~/.config/{btop,hypr,kitty,waybar,wofi} && cp -rf ~/hyprdots/config/* ~/.
 rm -f ~/.config/hypr/hyprpaper.conf && cp -f ~/.hyprdots/hyprpaper.conf ~/.config/hypr
 rm -f ~/.hyprdots/update.sh && cp -f ~/hyprdots/scripts/update.sh ~/.hyprdots
 rm -f ~/.hyprdots/hyprpaper.conf
-cp -f ~/hyprdots/misc/version ~/.hyprdots
+rm -f ~/.hyprdots/version && cp -f ~/hyprdots/misc/version ~/.hyprdots
+rm -f ~/.local/bin/wallset.sh && cp -f ~/hyprdots/scripts/wallset.sh ~/.local/bin
 rm -rf ~/hyprdots
 
 echo "Update done ^w^"

@@ -35,10 +35,15 @@ rm -rf ~/.config/{btop,hypr,kitty,waybar,wofi} && cp -rf ~/hyprdots/config/* ~/.
 mkdir ~/.hyprdots
 cp -f ~/hyprdots/misc/version ~/.hyprdots
 cp -f ~/hyprdots/scripts/update.sh ~/.hyprdots
+mkdir -p ~/.local/bin
+cp -f ~/hyprdots/scripts/wallset.sh ~/.local/bin
 
 sudo usermod -aG video $USER
 sudo systemctl enable sddm bluetooth
 systemctl --user enable pipewire{,-pulse} wireplumber
+
+wal --cols16 -n -i "~/.config/hypr/wallpaper/Sunset9.jpg"
+echo -e "preload = ~/.config/hypr/wallpaper/Sunset9.jpg\nwallpaper = , ~/.config/hypr/wallpaper/Sunset9.jpg" > ~/.config/hypr/hyprpaper.conf
 
 echo -n "..5"
 sleep 1
@@ -53,4 +58,3 @@ sleep 1
 echo "cya ^w^"
 sleep 0.1
 reboot
-sleep 0.05; light -T 0.95; 
