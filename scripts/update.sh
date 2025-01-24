@@ -39,6 +39,7 @@ rm -f ~/.hyprdots/update.sh && cp -f ~/hyprdots/scripts/update.sh ~/.hyprdots
 rm -f ~/.hyprdots/hyprpaper.conf
 rm -f ~/.hyprdots/version && cp -f ~/hyprdots/misc/version ~/.hyprdots
 rm -f ~/.local/bin/wallset.sh && cp -f ~/hyprdots/scripts/wallset.sh ~/.local/bin
+rm -f ~/.bashrc && cp -f ~/hyprdots/.bashrc ~
 rm -rf ~/hyprdots
 
 echo "Update done ^w^"

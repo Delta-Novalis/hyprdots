@@ -37,6 +37,7 @@ cp -f ~/hyprdots/misc/version ~/.hyprdots
 cp -f ~/hyprdots/scripts/update.sh ~/.hyprdots
 mkdir -p ~/.local/bin
 cp -f ~/hyprdots/scripts/wallset.sh ~/.local/bin
+rm -f ~/.bashrc && cp -f ~/hyprdots/.bashrc ~
 
 sudo usermod -aG video $USER
 sudo systemctl enable sddm bluetooth
